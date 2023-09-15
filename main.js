@@ -30,8 +30,6 @@ elementoDinero.innerText = dinero;
 
 function comprar(producto) {
     if (dinero - producto.precio <= -1){
-        alert("No tienes suficiente dinero para comprar " + producto.nombre);
-        return;
     } else {
         carrito.push(producto);
         dinero = dinero - producto.precio;
